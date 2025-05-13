@@ -26,31 +26,31 @@ Therefore, for a large n, the probability that the first element is a good pivot
 For a Median of Three Pivot, this method picks the median value among the first, middle, and last elements in the current array. This results in a 44% probability that a "good" pivot will be chosen. Therefore, the Median of Three has a statistically higher chance of picking a "good" pivot.
 
 First Element Probability:
-Middle Range = $[n/3 +1, 2n/3]$
-P= $([2n/3] - [n/3] +1)/n ≈ (n/3)/n = 1/3 = 33%$
+Middle Range = $[\frac {n}/{3}+1, \frac{2n}{3}]$
+P= $([\frac{2n}{3}] - \frac{[\frac{n}{3}]+1)}{n} ≈ \frac{(\frac{n}{3})}{n} = \frac{1}{3} = 33%$
 
 Median of Three Probability:
 Divide the array into 3 equal parts, take 3 samples
-Left range: $[1, n/3]$
-Middle range: $[n/3, 2n/3]$;
-Right range: $[2n/3, n]$; 
+Left range: $[1, \frac{n}{3}]$
+Middle range: $[\frac{n}{3}, \frac{2n}{3}]$;
+Right range: $[\frac{2n}{3}, n]$; 
 
 Case 1:
 6 permutations where smallest is from the Left(L), largest is from the Right(R), and median is from Middle (M)
 (LMR, LRM, MLR, MRL, RLM, RML)
-P_1 = $6 \times (1/3)^3$= $6/27$
+P_1 = $6 \times (\frac{1}{3})^3$= $\frac{6}{27}$
 
 Case 2:
 3 Permutations where 2 are from the Middle, 1 is from the Left
 (MML, MLM, LMM)
-P_2 = $3 \times (1/3)^3 \times (1/3) = 3/27$
+P_2 = $3 \times (\frac{1}{3})^3 \times (\frac{1}{3}) = \frac{3}{27}$
 
 Case 3:
 3 permutations where 2 are from the Middle, and 1 is from Right
 (MMR, MRM, RMM)
-P_3 = $3 \times (1/3)^2 \times (1/3) = 3/27$
+P_3 = $3 \times (\frac{1}{3})^2 \times (\frac{1}{3}) = \frac{3}{27}$
 
-P(median in middle third) = P1 + P2 + P3 = $(6/27) + (3/27) + (3/27) = 12/27 = 4/9$ \approx 44%
+P(median in middle third) = P1 + P2 + P3 = $(\frac{6}{27}) + (\frac{3}{27}) + (\frac{3}{27}) = \frac{12}{27} = \frac{4}{9}$ \approx 44%
 
 “I certify that I have listed all sources used to complete this exercise, including the use
 of any Large Language Models. All of the work is my own, except where stated
